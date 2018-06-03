@@ -17,10 +17,18 @@ void show_int(int x)
     show_bytes((byte_pointer) &x, sizeof(int));
 }
 
+void show_char(char c)
+{
+    show_bytes((byte_pointer) &c, sizeof(char));
+}
+
 void main()
 {
     while (TRUE) {
-        int c = getchar();
-        show_int(c);
+        char c = getchar();
+        show_char(c);
     }
+    // char *a = "3.1415\n";
+    // puts(a);
+    // show_bytes((byte_pointer) a, 10);
 }
