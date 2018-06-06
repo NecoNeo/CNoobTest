@@ -26,7 +26,7 @@ void main()
 {
     while (TRUE) {
         char c = getchar();
-        show_char(c);
+        show_int(c);
     }
     // char *a = "3.1415\n";
     // puts(a);
