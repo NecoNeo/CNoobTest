@@ -22,7 +22,7 @@ void show_char(char c)
     show_bytes((byte_pointer) &c, sizeof(char));
 }
 
-void main()
+int main()
 {
     while (TRUE) {
         char c = getchar();
@@ -31,4 +31,5 @@ void main()
     // char *a = "3.1415\n";
     // puts(a);
     // show_bytes((byte_pointer) a, 10);
+    return 0;
 }
